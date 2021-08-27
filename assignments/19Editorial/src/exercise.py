@@ -1,7 +1,9 @@
-def main():
-    # escribe tu código abajo de esta línea
-    pass
+import math
+palabras = int(input("Dame el número de palabras: "))
+paginas = math.ceil(palabras/475)
 
+costo = paginas * 60
+descuento = costo * 0.10
+total = costo - descuento
 
-if __name__ == '__main__':
-    main()
+print("el costo de la publicación es:",total)
